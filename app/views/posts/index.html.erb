@@ -1,0 +1,28 @@
+<h1 class='title'> Blog Index </h1>
+
+
+<section class="section">
+    <div class="container">
+        <% @posts.each do |post|  %>
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <P class="title is-4"><%= link_to  post.title, post %></p>
+                    </div>
+                </div>
+                <di v class="content">
+                    <%= post.content %>
+                </div>
+                <%
+=begin%>
+ <div class="comment-unt">
+                    <span class="tag is-rounded"> <%# comment count %> </span>
+                </div> 
+<%
+=end%>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</section>
