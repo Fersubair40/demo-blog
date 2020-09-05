@@ -1,0 +1,6 @@
+{
+    "emmet.includeLanguages": {
+        "rails": "html",
+        "html.erb": "html"
+    }
+}
